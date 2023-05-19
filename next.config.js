@@ -1,23 +1,23 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: [path.join(__dirname, "styles")],
   },
-  env: {
-    ORG_ID: "__YOUR_ORG_ID_HERE__",
-    API_KEY: "__YOUR_API_KEY_HERE__",
-    SEARCH_PIPELINE: 'Search',
-    // ENVIRONMENT: can be 'prod', 'dev', 'staging', 'hipaa'. Default is 'prod'.
-    // REGION: can be 'us', 'eu', 'au'. Default is 'us'.
-  },
+  // env: {
+  //   ORG_ID: "__YOUR_ORG_ID_HERE__",
+  //   API_KEY: "__YOUR_API_KEY_HERE__",
+  //   SEARCH_PIPELINE: 'Search',
+  //   // ENVIRONMENT: can be 'prod', 'dev', 'staging', 'hipaa'. Default is 'prod'.
+  //   // REGION: can be 'us', 'eu', 'au'. Default is 'us'.
+  // },
 
-  images: { domains: ['fashion.coveodemo.com'] },
+  images: { domains: ["fashion.coveodemo.com"] },
 
   publicRuntimeConfig: {
-    logo: '/logos/coveo_logo_black.svg',
-    title: 'The Closet',
-    scenario: 'fashion',
+    logo: "/logos/coveo_logo_black.svg",
+    title: "The Closet",
+    scenario: "fashion",
 
     features: {
       searchAsYouType: true,
@@ -31,11 +31,11 @@ module.exports = {
       sizeField: "cat_size",
     },
 
-    pipelinePDP: 'PDP',
-    pipelinePLP: 'Listing',
-    pipelineRecommendations: 'Recommendations',
-    searchhubPDP: 'PDP',
-    searchhubPLP: 'Listing',
+    pipelinePDP: "PDP",
+    pipelinePLP: "Listing",
+    pipelineRecommendations: "Recommendations",
+    searchhubPDP: "PDP",
+    searchhubPLP: "Listing",
 
     // Extra fields to return with search
     fields: [
@@ -58,12 +58,10 @@ module.exports = {
       "cat_size_type",
       "cat_size",
       "cat_slug",
-      "cat_total_sizes"
+      "cat_total_sizes",
     ],
 
     // Facets to display
-    facetFields: [
-      { field: 'cat_size_type', label: 'Fit', showCounts: false }
-    ]
+    facetFields: [{ field: "cat_size_type", label: "Fit", showCounts: false }],
   },
 };
