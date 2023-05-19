@@ -9,6 +9,7 @@ module.exports = {
     ORG_ID: process.env.ORG_ID,
     API_KEY: process.env.API_KEY,
     SEARCH_PIPELINE: "Search",
+    // one
     // ENVIRONMENT: can be 'prod', 'dev', 'staging', 'hipaa'. Default is 'prod'.
     // REGION: can be 'us', 'eu', 'au'. Default is 'us'.
   },
