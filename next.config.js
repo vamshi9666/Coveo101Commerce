@@ -4,13 +4,14 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  // env: {
-  //   ORG_ID: "__YOUR_ORG_ID_HERE__",
-  //   API_KEY: "__YOUR_API_KEY_HERE__",
-  //   SEARCH_PIPELINE: 'Search',
-  //   // ENVIRONMENT: can be 'prod', 'dev', 'staging', 'hipaa'. Default is 'prod'.
-  //   // REGION: can be 'us', 'eu', 'au'. Default is 'us'.
-  // },
+
+  env: {
+    ORG_ID: process.env.ORG_ID,
+    API_KEY: process.env.API_KEY,
+    SEARCH_PIPELINE: "Search",
+    // ENVIRONMENT: can be 'prod', 'dev', 'staging', 'hipaa'. Default is 'prod'.
+    // REGION: can be 'us', 'eu', 'au'. Default is 'us'.
+  },
 
   images: { domains: ["fashion.coveodemo.com"] },
 
